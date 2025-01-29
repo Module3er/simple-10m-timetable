@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeTable 2025</title>
+    <meta http-equiv="refresh" content="0;url=pages/register.html">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <p>Redirecting to registration...</p>
+    <div class="app-container">
+        <!-- Navigation -->
+        <nav class="top-nav">
+            <div class="nav-brand">TimeTable</div>
+            <div class="nav-time" id="current-time">00:00</div>
+            <div class="nav-actions">
+                <button class="btn-icon" id="theme-toggle">○</button>
+            </div>
+        </nav>
+
+        <!-- Registration Form -->
+        <div id="registration-form" class="panel registration-panel">
+            <div class="panel-content">
+                <h1>Welcome</h1>
+                <p class="subtitle">Select your subjects for 2025</p>
+                
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="Username" class="modern-input">
+                </div>
+
+                <div class="subject-selection">
+                    <div class="selection-header">Choose 5 Optional Subjects</div>
+                    <div class="selection-grid">
+                        <select id="subject1" class="modern-select">
+                            <option value="">Subject 1</option>
+                        </select>
+                        <select id="subject2" class="modern-select">
+                            <option value="">Subject 2</option>
+                        </select>
+                        <select id="subject3" class="modern-select">
+                            <option value="">Subject 3</option>
+                        </select>
+                        <select id="subject4" class="modern-select">
+                            <option value="">Subject 4</option>
+                        </select>
+                        <select id="subject5" class="modern-select">
+                            <option value="">Subject 5</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button id="register" class="btn-primary">Generate Timetable</button>
+            </div>
+        </div>
+
+        <!-- Current Subject Display -->
+        <div id="current-subject" class="panel current-panel hidden">
+            <div class="panel-content">
+                <div class="current-info">
+                    <div class="time-indicator">Current Period</div>
+                    <h2 id="current-subject-name">No Class</h2>
+                    <div id="current-room" class="room-badge">Room: --</div>
+                </div>
+                <div class="action-buttons">
+                    <button id="view-timetable" class="btn-secondary">View Full Schedule</button>
+                    <button id="logout" class="btn-text">Switch User</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timetable View -->
+        <div id="timetable-view" class="panel timetable-panel hidden">
+            <div class="panel-content">
+                <div class="timetable-header">
+                    <h2>Weekly Schedule</h2>
+                    <button id="back-to-current" class="btn-text">Back to Current</button>
+                </div>
+                <div class="timetable-grid"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/timetableData.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

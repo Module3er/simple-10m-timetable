@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Schedule - TimeTable 2025</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="top-nav">
+            <div class="nav-brand">TimeTable</div>
+            <div class="nav-time" id="current-time">00:00</div>
+            <div class="nav-actions">
+                <button class="btn-icon" id="theme-toggle">○</button>
+            </div>
+        </nav>
+
+        <div class="timetable-layout">
+            <div class="timetable-header">
+                <h1>Weekly Schedule</h1>
+                <p class="subtitle" id="username-display">Your personalized timetable</p>
+            </div>
+
+            <div class="timetable-container">
+                <div class="timetable-wrapper">
+                    <div class="time-column">
+                        <div class="time-header">Time</div>
+                        <div class="time-slots"></div>
+                    </div>
+                    <div class="days-grid">
+                        <div class="day-headers">
+                            <div class="day-header">Monday</div>
+                            <div class="day-header">Tuesday</div>
+                            <div class="day-header">Wednesday</div>
+                            <div class="day-header">Thursday</div>
+                            <div class="day-header">Friday</div>
+                        </div>
+                        <div id="timetable-grid"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick-actions">
+                <a href="current.html" class="btn-secondary">Back to Current</a>
+                <button id="logout-btn" class="btn-text">Logout</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/timetableData.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

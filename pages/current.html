@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Class - TimeTable 2025</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="top-nav">
+            <div class="nav-brand">TimeTable</div>
+            <div class="nav-time" id="current-time">00:00</div>
+            <div class="nav-actions">
+                <button class="btn-icon" id="theme-toggle">○</button>
+            </div>
+        </nav>
+
+        <div class="current-layout">
+            <div class="schedule-header">
+                <h1>Your Schedule</h1>
+                <p class="subtitle" id="username-display">Welcome back, User</p>
+            </div>
+
+            <div class="schedule-grid">
+                <div class="panel current-panel">
+                    <div class="panel-content">
+                        <div class="time-badge">Current Period</div>
+                        <div class="current-info">
+                            <h2 id="current-subject-name">No Class</h2>
+                            <div id="current-room" class="room-badge">Room: --</div>
+                            <div class="time-range">10:30 AM - 11:20 AM</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel next-panel">
+                    <div class="panel-content">
+                        <div class="time-badge">Next Up</div>
+                        <div class="next-info">
+                            <h3 id="next-subject-name">--</h3>
+                            <div id="next-room" class="room-badge">Room: --</div>
+                            <div class="time-range">11:30 AM - 12:20 PM</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick-actions">
+                <a href="timetable.html" class="btn-secondary">View Full Schedule</a>
+                <a href="register.html" class="btn-text">Switch User</a>
+            </div>
+        </div>
+    </div>
+    <script src="../js/timetableData.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - TimeTable 2025</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="top-nav">
+            <div class="nav-brand">TimeTable</div>
+            <div class="nav-time" id="current-time">00:00</div>
+            <div class="nav-actions">
+                <button class="btn-icon" id="theme-toggle">○</button>
+            </div>
+        </nav>
+
+        <div class="registration-layout">
+            <div class="welcome-section">
+                <h1>Welcome to<br>TimeTable</h1>
+                <p class="subtitle">Your personalized class schedule for 2025</p>
+            </div>
+
+            <div class="panel registration-panel">
+                <div class="panel-content">
+                    <div class="step-indicator">Step 1 of 2</div>
+                    <h2>Create Profile</h2>
+                    
+                    <div class="input-group">
+                        <label for="username">Your Name</label>
+                        <input type="text" id="username" placeholder="Enter your name" class="modern-input">
+                    </div>
+
+                    <div class="subject-selection">
+                        <div class="selection-header">
+                            <h3>Choose Optional Subjects</h3>
+                            <span class="selection-count">0/5 selected</span>
+                        </div>
+                        <div class="autocomplete-container">
+                            <div class="subject-input-group">
+                                <input type="text" class="modern-input subject-input" id="subject1" placeholder="First subject" autocomplete="off">
+                                <div class="suggestions" id="suggestions1"></div>
+                            </div>
+                            <div class="subject-input-group">
+                                <input type="text" class="modern-input subject-input" id="subject2" placeholder="Second subject" autocomplete="off">
+                                <div class="suggestions" id="suggestions2"></div>
+                            </div>
+                            <div class="subject-input-group">
+                                <input type="text" class="modern-input subject-input" id="subject3" placeholder="Third subject" autocomplete="off">
+                                <div class="suggestions" id="suggestions3"></div>
+                            </div>
+                            <div class="subject-input-group">
+                                <input type="text" class="modern-input subject-input" id="subject4" placeholder="Fourth subject" autocomplete="off">
+                                <div class="suggestions" id="suggestions4"></div>
+                            </div>
+                            <div class="subject-input-group">
+                                <input type="text" class="modern-input subject-input" id="subject5" placeholder="Fifth subject" autocomplete="off">
+                                <div class="suggestions" id="suggestions5"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="action-group">
+                        <button id="register" class="btn-primary">Generate Schedule</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/timetableData.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
